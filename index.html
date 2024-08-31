@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cheat Sheet">
+    <meta name="author" content="Jomar Quiban">
+    <title>HTML Cheat Sheet</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Oswald:wght@200..700&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>HTML Table Cheat Sheet</h1>
+    <h2>Basic Table Structure</h2>
+    <p>This is a basic table structure:</p>
+    <table>
+        <caption>Basic Table Example</caption>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Table Elements</h2>
+    <dl>
+        <dt><code>&lt;table&gt;</code></dt>
+        <dd>Defines the table.</dd>
+        
+        <dt><code>&lt;thead&gt;</code></dt>
+        <dd>Groups the header content in a table.</dd>
+        
+        <dt><code>&lt;tbody&gt;</code></dt>
+        <dd>Groups the body content in a table.</dd>
+        
+        <dt><code>&lt;tfoot&gt;</code></dt>
+        <dd>Groups the footer content in a table.</dd>
+        
+        <dt><code>&lt;tr&gt;</code></dt>
+        <dd>Defines a row in the table.</dd>
+        
+        <dt><code>&lt;th&gt;</code></dt>
+        <dd>Defines a header cell in the table.</dd>
+        
+        <dt><code>&lt;td&gt;</code></dt>
+        <dd>Defines a standard cell in the table.</dd>
+        
+        <dt><code>&lt;caption&gt;</code></dt>
+        <dd>Defines a table caption.</dd>
+    </dl>
+
+    <h2>Attributes</h2>
+    <ul>
+        <li><code>colspan</code>: Specifies the number of columns a cell should span.</li>
+        <li><code>rowspan</code>: Specifies the number of rows a cell should span.</li>
+        <li><code>scope</code>: Defines the scope of the header cell. Values can be <code>col</code>, <code>row</code>, <code>colgroup</code>, or <code>rowgroup</code>.</li>
+    </ul>
+
+    <h2>Example with Attributes</h2>
+    <table>
+        <caption>Table with Colspan and Rowspan</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Header 1</th>
+                <th colspan="2">Header 2 and 3</th>
+            </tr>
+            <tr>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td colspan="2">Row 1, Cell 2 and 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Jomar Quiban All rights reserved.</p>
+    </footer>
+</body>
+</html>
